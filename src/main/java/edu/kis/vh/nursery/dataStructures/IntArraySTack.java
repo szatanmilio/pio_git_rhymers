@@ -1,16 +1,16 @@
-package edu.kis.vh.nursery;
+package edu.kis.vh.nursery.dataStructures;
 
-public class IntArraySTack {
+public class IntArraySTack implements IntArraySTackInterface {
 
-    private static final int ARRAY_SIZE = 12;
+    private static final int ARRAY_CAPACITY = 12;
 
-    private static final int CAPACITY = 11;
+    private static final int FULL_RHYMER_INDICATOR = 11;
 
     private static final int EMPTY_RHYMER_INDICATOR = -1;
 
-    private static final int DEFAULT = -1;
+    private static final int DEFAULT = 0;
 
-    private final int[] numbers = new int[ARRAY_SIZE];
+    private final int[] numbers = new int[ARRAY_CAPACITY];
 
     public int total = EMPTY_RHYMER_INDICATOR;
 
@@ -28,10 +28,10 @@ public class IntArraySTack {
     }
 
     public boolean isFull() {
-        return total == CAPACITY;
+        return total == FULL_RHYMER_INDICATOR;
     }
 
-    protected int peekaboo() {
+    public int peekaboo() {
         if (callCheck())
             return DEFAULT;
         return numbers[total];
