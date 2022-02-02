@@ -14,29 +14,35 @@ public class IntArraySTack implements IntArraySTackInterface {
 
     public int total = EMPTY_RHYMER_INDICATOR;
 
+    @Override
     public void countIn(int in) {
         if (!isFull())
             numbers[++total] = in;
     }
 
+    @Override
     public int getTotal() {
         return total;
     }
 
+    @Override
     public boolean callCheck() {
         return total == EMPTY_RHYMER_INDICATOR;
     }
 
+    @Override
     public boolean isFull() {
         return total == FULL_RHYMER_INDICATOR;
     }
 
+    @Override
     public int peekaboo() {
         if (callCheck())
             return DEFAULT;
         return numbers[total];
     }
 
+    @Override
     public int countOut() {
         if (callCheck())
             return DEFAULT;
