@@ -1,6 +1,6 @@
 package edu.kis.vh.nursery.dataStructures;
 
-public class IntLinkedList implements IntLinkedListInterface {
+public class IntLinkedList implements Structrues {
 
     private static final int DEFAULT = -1;
     Node last;
@@ -41,5 +41,30 @@ public class IntLinkedList implements IntLinkedListInterface {
         int ret = last.value;
         last = last.prev;
         return ret;
+    }
+
+    @Override
+    public void countIn(int in) {
+
+    }
+
+    @Override
+    public int getTotal() {
+        return 0;
+    }
+
+    @Override
+    public boolean callCheck() {
+        return false;
+    }
+
+    @Override
+    public int peekaboo() {
+        return 0;
+    }
+
+    @Override
+    public int countOut() {
+        return 0;
     }
 }

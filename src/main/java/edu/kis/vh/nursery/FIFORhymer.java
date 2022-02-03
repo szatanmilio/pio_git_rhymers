@@ -1,10 +1,8 @@
 package edu.kis.vh.nursery;
 
-import edu.kis.vh.nursery.dataStructures.IntArraySTack;
-
 public class FIFORhymer extends DefaultCountingOutRhymer {
 
-    public final IntArraySTack temp = new IntArraySTack();
+    private final DefaultCountingOutRhymer temp = new DefaultCountingOutRhymer();
 
     public FIFORhymer() {
         super();

@@ -1,13 +1,13 @@
 package edu.kis.vh.nursery;
 
-import edu.kis.vh.nursery.dataStructures.IntArraySTack;
+import edu.kis.vh.nursery.dataStructures.IntArrayStack;
 
 public class DefaultCountingOutRhymer {
-    public IntArraySTack arraySTack = new IntArraySTack();
+    public IntArrayStack arraySTack = new IntArrayStack();
 
     public DefaultCountingOutRhymer(){}
 
-    public DefaultCountingOutRhymer(IntArraySTack arraySTack) {
+    public DefaultCountingOutRhymer(IntArrayStack arraySTack) {
         this.arraySTack = arraySTack;
     }
 
@@ -27,7 +27,7 @@ public class DefaultCountingOutRhymer {
         return arraySTack.isFull();
     }
 
-    public int peekaboo() {
+    protected int peekaboo() {
         return arraySTack.peekaboo();
     }
 

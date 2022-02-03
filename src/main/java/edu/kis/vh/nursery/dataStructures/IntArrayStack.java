@@ -1,10 +1,10 @@
 package edu.kis.vh.nursery.dataStructures;
 
-public class IntArraySTack implements IntArraySTackInterface {
+public class IntArrayStack implements Structrues {
 
     private static final int ARRAY_CAPACITY = 12;
 
-    private static final int FULL_RHYMER_INDICATOR = 11;
+    private static final int FULL_RHYMER_INDICATOR = 12;
 
     private static final int EMPTY_RHYMER_INDICATOR = -1;
 
@@ -47,5 +47,25 @@ public class IntArraySTack implements IntArraySTackInterface {
         if (callCheck())
             return DEFAULT;
         return numbers[total--];
+    }
+
+    @Override
+    public int top() {
+        return 0;
+    }
+
+    @Override
+    public int pop() {
+        return 0;
+    }
+
+    @Override
+    public void push(int i) {
+
+    }
+
+    @Override
+    public boolean isEmpty() {
+        return false;
     }
 }
