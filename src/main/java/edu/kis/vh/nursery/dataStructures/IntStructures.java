@@ -1,15 +1,7 @@
 package edu.kis.vh.nursery.dataStructures;
 
-public interface Structrues {
-    void countIn(int in);
-
-    int getTotal();
-
-    boolean callCheck();
-
-    int peekaboo();
-
-    int countOut();
+public interface IntStructures {
+    final int IF_EMPTY = 0;
 
     void push(int i);
 

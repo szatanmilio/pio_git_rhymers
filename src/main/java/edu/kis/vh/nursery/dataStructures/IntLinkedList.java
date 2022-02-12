@@ -1,9 +1,9 @@
 package edu.kis.vh.nursery.dataStructures;
 
-public class IntLinkedList implements Structrues {
+public class IntLinkedList implements IntStructures {
 
     private static final int DEFAULT = -1;
-    Node last;
+    private Node last;
     int i;
 
     @Override
@@ -30,41 +30,17 @@ public class IntLinkedList implements Structrues {
     @Override
     public int top() {
         if (isEmpty())
-            return DEFAULT;
+            return IF_EMPTY;
         return last.value;
     }
 
     @Override
     public int pop() {
         if (isEmpty())
-            return DEFAULT;
+            return IF_EMPTY;
         int ret = last.value;
         last = last.prev;
         return ret;
     }
 
-    @Override
-    public void countIn(int in) {
-
-    }
-
-    @Override
-    public int getTotal() {
-        return 0;
-    }
-
-    @Override
-    public boolean callCheck() {
-        return false;
-    }
-
-    @Override
-    public int peekaboo() {
-        return 0;
-    }
-
-    @Override
-    public int countOut() {
-        return 0;
-    }
 }
