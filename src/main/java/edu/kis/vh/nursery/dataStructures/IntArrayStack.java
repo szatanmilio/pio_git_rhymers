@@ -1,10 +1,10 @@
 package edu.kis.vh.nursery.dataStructures;
 
-public class IntArrayStack implements IntStructures {
+public class IntArrayStack implements IntStructure {
 
     private static final int ARRAY_CAPACITY = 12;
 
-    private static final int FULL_RHYMER_INDICATOR = 11;
+    private static final int FULL_RHYMER_INDICATOR = ARRAY_CAPACITY - 1;
 
     private static final int EMPTY_RHYMER_INDICATOR = -1;
 
@@ -14,56 +14,32 @@ public class IntArrayStack implements IntStructures {
 
     public int total = EMPTY_RHYMER_INDICATOR;
 
-    public void countIn(int in) {
-        if (!isFull())
-            numbers[++total] = in;
-    }
-
-    public void setTotal(int total) {
-        this.total = total;
-    }
-
-    public int getTotal() {
-        return total;
-    }
-
-    public boolean callCheck() {
-        return total == EMPTY_RHYMER_INDICATOR;
-    }
-
     public boolean isFull() {
         return total == FULL_RHYMER_INDICATOR;
     }
 
-    public int peekaboo() {
-        if (callCheck())
-            return DEFAULT;
-        return numbers[total];
-    }
-
-    public int countOut() {
-        if (callCheck())
-            return DEFAULT;
-        return numbers[total--];
-    }
-
     @Override
     public void push(int i) {
-        countIn(i);
+        if (!isFull())
+            numbers[++total] = i;
     }
 
     @Override
     public boolean isEmpty() {
-        return callCheck();
+        return total == EMPTY_RHYMER_INDICATOR;
     }
 
     @Override
     public int top() {
-        return peekaboo();
+        if (isEmpty())
+            return DEFAULT;
+        return numbers[total];
     }
 
     @Override
     public int pop() {
-        return countOut();
+        if (isEmpty())
+            return DEFAULT;
+        return numbers[total--];
     }
 }

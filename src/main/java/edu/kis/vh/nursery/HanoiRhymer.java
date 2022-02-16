@@ -1,10 +1,10 @@
 package edu.kis.vh.nursery;
 
-import edu.kis.vh.nursery.dataStructures.IntArrayStack;
+import edu.kis.vh.nursery.dataStructures.IntStructure;
 
 public class HanoiRhymer extends DefaultCountingOutRhymer {
 
-    public HanoiRhymer(IntArrayStack stack) {
+    public HanoiRhymer(IntStructure stack) {
         super(stack);
     }
 

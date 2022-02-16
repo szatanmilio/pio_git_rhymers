@@ -1,6 +1,6 @@
 package edu.kis.vh.nursery.dataStructures;
 
-public interface IntStructures {
+public interface IntStructure {
     final int IF_EMPTY = 0;
 
     void push(int i);

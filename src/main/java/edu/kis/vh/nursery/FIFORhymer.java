@@ -4,7 +4,7 @@ import edu.kis.vh.nursery.dataStructures.IntArrayStack;
 
 public class FIFORhymer extends DefaultCountingOutRhymer {
 
-    public DefaultCountingOutRhymer temp = new DefaultCountingOutRhymer();
+    private final DefaultCountingOutRhymer temp = new DefaultCountingOutRhymer();
 
     public FIFORhymer(IntArrayStack stack) {
         super(stack);

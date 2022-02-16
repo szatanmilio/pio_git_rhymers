@@ -1,13 +1,12 @@
 package edu.kis.vh.nursery;
 
-import edu.kis.vh.nursery.dataStructures.IntArrayStack;
 import edu.kis.vh.nursery.dataStructures.IntLinkedList;
-import edu.kis.vh.nursery.dataStructures.IntStructures;
+import edu.kis.vh.nursery.dataStructures.IntStructure;
 
 public class DefaultCountingOutRhymer {
-    private IntStructures stack;
+    private IntStructure stack;
 
-    public DefaultCountingOutRhymer(IntArrayStack stack) {
+    public DefaultCountingOutRhymer(IntStructure stack) {
         this.stack = stack;
     }
 

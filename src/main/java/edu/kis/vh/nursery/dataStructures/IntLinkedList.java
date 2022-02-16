@@ -1,6 +1,6 @@
 package edu.kis.vh.nursery.dataStructures;
 
-public class IntLinkedList implements IntStructures {
+public class IntLinkedList implements IntStructure {
 
     private static final int DEFAULT = -1;
     private Node last;
