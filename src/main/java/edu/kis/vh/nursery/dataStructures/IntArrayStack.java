@@ -18,6 +18,10 @@ public class IntArrayStack implements IntStructure {
         return total == FULL_RHYMER_INDICATOR;
     }
 
+    public int getTotal() {
+        return total;
+    }
+
     @Override
     public void push(int i) {
         if (!isFull())
