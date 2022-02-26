@@ -13,7 +13,7 @@ public class FIFORhymer extends DefaultCountingOutRhymer {
     public FIFORhymer(){
 
     }
-
+    
     @Override
     public int countOut() {
         while (!callCheck())
