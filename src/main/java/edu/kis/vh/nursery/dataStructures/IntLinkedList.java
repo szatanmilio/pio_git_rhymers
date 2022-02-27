@@ -43,4 +43,9 @@ public class IntLinkedList implements IntStructure {
         return ret;
     }
 
+    @Override
+    public int getTotal() {
+        return -1;
+    }
+
 }

@@ -18,6 +18,7 @@ public class IntArrayStack implements IntStructure {
         return total == FULL_RHYMER_INDICATOR;
     }
 
+    @Override
     public int getTotal() {
         return total;
     }

@@ -20,7 +20,8 @@ public class StackRhymersFactory implements Rhymersfactory {
 
     @Override
     public DefaultCountingOutRhymer getFIFORhymer() {
-        return new FIFORhymer();
+        IntArrayStack stack = new IntArrayStack();
+        return new FIFORhymer(stack);
     }
 
     @Override

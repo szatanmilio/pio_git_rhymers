@@ -33,4 +33,8 @@ public class DefaultCountingOutRhymer {
     public int peekaboo() {
         return stack.top();
     }
+
+    public int getTotal() {
+        return stack.getTotal();
+    }
 }

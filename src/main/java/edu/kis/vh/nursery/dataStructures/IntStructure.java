@@ -12,4 +12,6 @@ public interface IntStructure {
     int top();
 
     int pop();
+
+    int getTotal();
 }
