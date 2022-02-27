@@ -7,9 +7,14 @@ import edu.kis.vh.nursery.HanoiRhymer;
 import edu.kis.vh.nursery.dataStructures.IntArrayStack;
 
 public class StackRhymersFactory implements Rhymersfactory {
+    IntArrayStack stack;
+
+    public StackRhymersFactory() {
+        stack = new IntArrayStack();
+    }
+
     @Override
     public DefaultCountingOutRhymer getStandardRhymer() {
-        IntArrayStack stack = new IntArrayStack();
         return new DefaultCountingOutRhymer(stack);
     }
 
@@ -20,7 +25,6 @@ public class StackRhymersFactory implements Rhymersfactory {
 
     @Override
     public DefaultCountingOutRhymer getFIFORhymer() {
-        IntArrayStack stack = new IntArrayStack();
         return new FIFORhymer(stack);
     }
 
